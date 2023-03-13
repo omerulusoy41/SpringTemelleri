@@ -1,7 +1,7 @@
 ## Dependency Injection
-<<<<<<< HEAD
-daha rahat yonetim adina bagimli olunan objeyi baska bir yerde yaratip nesneyi set ile ya da consructora gecmeye dependency injection denir.Bu sekilde nesen olusturmak hem bagimliligi bir nebze yonetme hemde null pointer exception hatasini azaltma da ise yarar.Bir seyi kullanmak arayuzunu bilmektir,bir seyi yaratmak yapisini bilmektir.(program to interface not an implemenation)
-bagimliklar soyut yapilarda olusturulmalidir.
+- Daha rahat yonetim adina bagimli olunan objeyi baska bir yerde yaratip nesneyi set ile ya da consructora gecmeye dependency injection denir.Bu sekilde nesen olusturmak hem bagimliligi bir nebze yonetme hemde null pointer exception hatasini azaltma da ise yarar.Bir seyi kullanmak arayuzunu bilmektir,bir seyi yaratmak yapisini bilmektir.(program to interface not an implemenation)  
+- Bagimliklar soyut yapilarda olusturulmalidir.  
+![Profile](https://github.com/omerulusoy41/SpringTemelleri/blob/master/ss/DI.jpg)  
 ## Inversion Of Controll
 Kontrolün Ters Çevrilmesi, bir programın nesnelerinin veya bölümlerinin kontrolünü bir kaba veya çerçeveye aktaran yazılım mühendisliğinde bir ilkedir. Bunu çoğunlukla nesne yönelimli programlama bağlamında kullanırız.
 
@@ -12,11 +12,3 @@ Kod Akışı kendi içerisinde ilerlerken sprin bu akışın bağmlılıkların�
 - Bean : bean, bir Spring uygulamasının omurgasını oluşturan ve Spring IoC konteyneri tarafından yönetilen java nesneleridir.
 - Bean factory : Bean tanımlarını tutar. Beanin yasam döngüsünü başlatır. Onları başlatırken gerekli dependency leri ayarlar.En basit tabiriyle beanlari koordine eder.
 
-
-
-
-=======
-- Daha rahat yonetim adina bagimli olunan objeyi baska bir yerde yaratip nesneyi set ile ya da consructora gecmeye dependency injection denir.Bu sekilde nesen olusturmak hem bagimliligi bir nebze yonetme hemde null pointer exception hatasini azaltma da ise yarar.Bir seyi kullanmak arayuzunu bilmektir,bir seyi yaratmak yapisini bilmektir.(program to interface not an implemenation)  
-- bagimliklar soyut yapilarda olusturulmalidir.  
-![Profile](https://github.com/omerulusoy41/SpringTemelleri/blob/master/ss/DI.jpg)
->>>>>>> f98aaea9fe69e96ddf73224d3366e0b29335a85a
