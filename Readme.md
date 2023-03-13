@@ -28,5 +28,10 @@ Application context beanleri singleton(scope="singleton") yaratır.Tersi (scope=
 - ```<bean id="textEditor" class="com.example.TextEditor"> <property name="checker" ref="spellChecker" /> />```(setter inj)  
 - ```<bean id="db" class="com.example.database"> <property name="uri" value="mongodb+srv//..." />```  
 ![Profile](https://github.com/omerulusoy41/SpringTemelleri/blob/master/ss/ValueInejction.jpg)  
-## with Annotaions
+## with Annotaions  
+#### Annotations Nedir: Temel olarak, bir ek açıklama, bağlı olduğu kaynak koduna fazladan meta veri atar . Bir yönteme, arayüze, sınıfa veya alana açıklama ekleyerek şunları yapabiliriz:
+- Derleyiciyi uyarılar ve hatalar hakkında bilgilendirin
+- Kaynak kodunu derleme zamanında işleyin
+- Çalışma zamanında davranışı değiştirin veya inceleyin
+### Spring annotations  
 - @Autowired :
