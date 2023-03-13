@@ -7,6 +7,7 @@
         <bean id="BeanA" class="ofu.SpringTemelleri.BeanA">
         	<property name="name" value = "Omer"></property>
         	<property name="age" value = "20" ></property>
+        	<constructor-arg name="beanc"  ref = "BeanC"/>
         </bean>
         
         <bean id = "BeanB" class="ofu.SpringTemelleri.BeanB" parent="BeanA">
