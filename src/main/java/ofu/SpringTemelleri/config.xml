@@ -13,5 +13,7 @@
         	<property name="weight" value = "66" ></property>
         </bean>
         
-        
+        <!--Ben defaultda singletonum-->
+        <bean id ="BeanC" scope="prototype" class = "ofu.SpringTemelleri.BeanC"> 
+        </bean>
 </beans>
