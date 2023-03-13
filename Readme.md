@@ -19,7 +19,7 @@ ApplicationContext sınıfı, BeanFactory sınıfından türetilmiştir ve BeanF
 - xml içerisinde beans tag'inin altında beanler tanımlayarak uygulanır. Beanler arası dependency injectionlar da xml içerisinde hallolur. main class da xml i ayaga kaldırmak gerekir.Genellikle kullanmıcaz.  
 - ```<bean id="myBean" class="com.example.MyBean">```(Temel bean tanımı)  
 - ```<import resource="other.xml"/>```(fatklı xmli deiğer xmle import etme)  
-- ```<bean id="parentBean" class="com.example.ParentBean" /> ||| <bean id="childBean" class="com.example.ChildBean" parent="parentBean" />```  (inheritance)
+- ```<bean id="parentBean" class="com.example.ParentBean" /> ||| <bean id="childBean" class="com.example.ChildBean" parent="parentBean" />```(inheritance)  
 Application context beanleri eager li yaratır(lazy-init = false) bunu önlemek adına:  
 - ```<bean id="myBean" class="com.example.MyBean" lazy-init="true">```  
 Application context beanleri singleton(scope="singleton") yaratır.Tersi (scope="prototype").Eğer scope prototype ise lazy-init = true dur.    
