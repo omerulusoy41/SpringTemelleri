@@ -10,5 +10,11 @@ Kontrolün Ters Çevrilmesi, bir programın nesnelerinin veya bölümlerinin kon
 Kod Akışı kendi içerisinde ilerlerken sprin bu akışın bağmlılıklarını çözümlemekadına kendine bir akış sağlar.Temelde akış springe yönlenmiş olur.Sprinden bağımsız bir şekilde bu akışı bozarsak örneğin bir obje yaratımını IOC ye verdikten sonra tekrardan kendimiz bir new yaparsak spring bunu görmez çünkü akış kendisinden çıkmış olur
 ## IOC Temel Nesneleri
 - Bean : bean, bir Spring uygulamasının omurgasını oluşturan ve Spring IoC konteyneri tarafından yönetilen java nesneleridir.
-- Bean factory : Bean tanımlarını tutar. Beanin yasam döngüsünü başlatır. Onları başlatırken gerekli dependency leri ayarlar.En basit tabiriyle beanlari koordine eder.
+- Bean factory : Bean tanımlarını tutar. Beanin yasam döngüsünü başlatır. Onları başlatırken gerekli dependency leri ayarlar.En basit tabiriyle beanlari koordine eder.  
 
+# Spring uygulanması:
+
+## with XML 
+- xml içerisinde beans tag'inin altında beanler tanımlayarak uygulanır. Beanler arası dependency injectionlar da xml içerisinde hallolur. main class da xml i ayaga kaldırmak gerekir.Genellikle kullanmıcaz.  
+## with Annotaions
+- @Autowired :
