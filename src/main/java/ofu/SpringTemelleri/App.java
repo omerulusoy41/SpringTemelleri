@@ -14,5 +14,7 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("ofu/SpringTemelleri/config.xml");
     	BeanA beanA = (BeanA) context.getBean("BeanA");
     	BeanB beanB = context.getBean("BeanB",BeanB.class);
+    	System.out.println(beanA);
+    	System.out.println(beanB);
     }
 }

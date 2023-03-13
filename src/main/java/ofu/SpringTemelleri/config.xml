@@ -3,7 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-        <import resource="config2.xml" />
-        <bean id="BeanA" class="ofu.SpringTemelleri.BeanA" />
+        
+        <bean id="BeanA" class="ofu.SpringTemelleri.BeanA">
+        	<property name="name" value = "Omer"></property>
+        	<property name="age" value = "20" ></property>
+        </bean>
+        
+        <bean id = "BeanB" class="ofu.SpringTemelleri.BeanB" parent="BeanA">
+        	<property name="weight" value = "66" ></property>
+        </bean>
+        
         
 </beans>
