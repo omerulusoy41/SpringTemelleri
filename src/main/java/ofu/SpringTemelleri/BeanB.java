@@ -5,10 +5,14 @@ public class BeanB extends BeanA{
 	protected float weight;
 	private BeanC beanc;
 	
-	public BeanB(BeanC beanc)
+	public BeanB()
 	{
-		this.beanc=beanc;
 		System.out.println("Ben BeanB");
+	}
+	
+	public void setBeanC(BeanC beanc)
+	{
+		this.beanc = beanc;
 	}
 
 
