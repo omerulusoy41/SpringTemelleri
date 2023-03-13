@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd" default-lazy-init="true">
-        
-        <bean id="BeanA" class="ofu.SpringTemelleri.BeanA">
-        	<property name="name" value = "Omer"></property>
-        	<property name="age" value = "20" ></property>
-        	<property name="beanC"  ref = "BeanC"/>
-        </bean>
-        
-        <bean id = "BeanB" class="ofu.SpringTemelleri.BeanB" parent="BeanA">
-        	<property name="weight" value = "66" ></property>
-        </bean>
-        
-        <!--Ben defaultda singletonum-->
-        <bean id ="BeanC" scope="prototype" class = "ofu.SpringTemelleri.BeanC"> 
-        </bean>
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+        <!--Referans link değişti-->
+        <context:annotation-config/>
+        <bean id="BeanA" class="ofu.SpringTemelleri.BeanA" />
+        <bean id="BeanB" class="ofu.SpringTemelleri.BeanB" />
 </beans>
