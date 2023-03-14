@@ -5,6 +5,5 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
         <!--Referans link değişti-->
-        <context:component-scan base-package="ofu.SpringTemelleri"></context:component-scan>
-        
+        <context:component-scan base-package="ofu.SpringTemelleri"></context:component-scan>    
 </beans>
