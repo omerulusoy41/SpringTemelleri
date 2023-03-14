@@ -6,23 +6,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Draw {
-	
-	@Qualifier("rectangle")
+
 	@Autowired
-	private Shape shape1;
-	
-	@Autowired
-	private Shape triangle;
-	
-	@Autowired
-	@Triang
-	private Shape ownQualfier;
+	private Shape shape;
 	
 	public void draw()
 	{
-		shape1.draw();
-		triangle.draw();
-		ownQualfier.draw();
+		shape.draw();
 	}
 }
 	
