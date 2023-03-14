@@ -1,7 +1,9 @@
 package ofu.SpringTemelleri;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("beanA")
 public class BeanA {
 	
 	protected String name;

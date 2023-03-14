@@ -5,7 +5,6 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
         <!--Referans link değişti-->
-        <context:annotation-config/>
-        <bean id="BeanA" class="ofu.SpringTemelleri.BeanA" />
-        <bean id="BeanB" class="ofu.SpringTemelleri.BeanB" />
+        <context:component-scan base-package="ofu.SpringTemelleri"></context:component-scan>
+        
 </beans>
