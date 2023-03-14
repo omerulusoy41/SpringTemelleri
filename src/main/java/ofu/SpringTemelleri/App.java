@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("ofu/SpringTemelleri/config.xml");
-        Draw draw = context.getBean("draw",Draw.class);
-        draw.draw();
+        People people = context.getBean("people",People.class);
+        System.out.println(people);
     }
 }
