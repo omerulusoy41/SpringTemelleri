@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 @PropertySource("classpath:ofu/SpringTemelleri/people.properties")
-@Profile("Deneme")
 public class People {
 	
 	@Value("Omer Faruk")

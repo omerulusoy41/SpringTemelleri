@@ -1,19 +1,19 @@
 package ofu.SpringTemelleri;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.env.AbstractEnvironment;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Hello world!
  *
  */
+@ComponentScan
 public class App 
 {
     public static void main( String[] args )
     {
-    	System.setProperty(AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME, "Deneme");
-        ApplicationContext context = new ClassPathXmlApplicationContext("ofu/SpringTemelleri/config.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(App.class);
         People people = context.getBean("people",People.class);
         System.out.println(people);
     }
