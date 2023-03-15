@@ -1,9 +1,9 @@
 package ofu.SpringTemelleri;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -20,10 +20,9 @@ public class People {
 	}
 	
 	@Autowired
-	public void setName(@Qualifier("name") String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	@Autowired
 	public void setAge(int age) {
@@ -31,6 +30,7 @@ public class People {
 	}
 
 	@Bean("name")
+	@Primary
 	public  String setName() {
 		return "Omer";
 	}
