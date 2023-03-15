@@ -1,23 +1,36 @@
 package ofu.SpringTemelleri;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
-
-@Component
-@PropertySource("classpath:ofu/SpringTemelleri/people.properties")
 public class People {
 	
-	@Value("Omer Faruk")
 	private String name;
-	@Value("${lastname}")
 	private String lastname;
-	@Value("${age}")
 	private int age;
+	
+	public People() {
+		
+	}
+	
+	public People(String name, String lastname, int age) {
+		super();
+		this.name = name;
+		this.lastname = lastname;
+		this.age = age;
+		System.out.println("olustum");
+	}
+
 	@Override
 	public String toString() {
 		return "People [name=" + name + ", lastname=" + lastname + ", age=" + age + "]";
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 	
