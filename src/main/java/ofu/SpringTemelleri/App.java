@@ -12,7 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(App.class);
         People people = context.getBean("people",People.class);
         System.out.println(people);
     }

@@ -1,14 +1,14 @@
 package ofu.SpringTemelleri;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
 public class People {
 	
 	private String name;
 	private String lastname;
 	private int age;
-	
-	public People() {
-		
-	}
 	
 	public People(String name, String lastname, int age) {
 		super();
@@ -23,14 +23,19 @@ public class People {
 		return "People [name=" + name + ", lastname=" + lastname + ", age=" + age + "]";
 	}
 	
-	public void setName(String name) {
-		this.name = name;
+	@Bean("name")
+	public static String setName() {
+		return "Omer";
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	
+	@Bean ("lastname")
+	public static String setLastname() {
+		return "ulusoy";
 	}
-	public void setAge(int age) {
-		this.age = age;
+	
+	@Bean ("age")
+	public static int setAge() {
+		return 20;
 	}
 	
 	
