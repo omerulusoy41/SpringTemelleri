@@ -1,20 +1,18 @@
 package ofu.SpringTemelleri;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
 @Component
-@Lazy(true)
+@DependsOn("Allah")
 public class People {
 	
 	private String name;
-	@Value("Ulusoy")
 	private String lastname;
 	private int age;
 
 	public People() {
-		System.out.println("Constructor");
+		System.out.println("People Constructor");
 	}
 	@Override
 	public String toString() {
