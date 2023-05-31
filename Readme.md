@@ -1,3 +1,11 @@
+## Framework nedir
+Framework yazılım geliştirme aşamasında  Genel bir yapı bir çerceve sağlayarak geliştiricinin belirli standartlara uymasına belirli mimariye uymasına,desingn patternlara göre kod yazılmasına , hızlı geliştirmeler yapmasına olanak tanır.Yani kısaca yazılımı çevreleyen bir kap.Springde bunlardan bir tanesidir.
+
+## Spring Framework
+Springin bir çok özellği var fakat ama temel atma aşamasında şu iki özelliğini bilmek de fayda var. IOC ve dependency injection.  
+Yazılımda dependency nedir?  
+Bir cok dependency türleri var fakat en temelinde source kod bazında ki dependency ler ile ugrasıcaz. 
+
 ## Dependency Injection
 - Daha rahat yonetim adina bagimli olunan objeyi baska bir yerde yaratip nesneyi set ile ya da consructora gecmeye dependency injection denir.Bu sekilde nesen olusturmak hem bagimliligi bir nebze yonetme hemde null pointer exception hatasini azaltma da ise yarar.Bir seyi kullanmak arayuzunu bilmektir,bir seyi yaratmak yapisini bilmektir.(program to interface not an implemenation)  
 - Bagimliklar soyut yapilarda olusturulmalidir.  
