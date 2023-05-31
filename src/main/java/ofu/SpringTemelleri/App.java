@@ -24,6 +24,5 @@ public class App
         for (OrderInterface order: app.allOrder) {
         	System.out.println(order);
         }
-        
     }
 }
