@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="provider" class="org.example.chp8.HelloWorldGreetingProvider">
+        <property name="mesage" value="naber"/>
+    </bean>
+
+    <bean id="render" class="org.example.chp8.ErrorOutputRenderer">
+        <property name="provider" ref="provider"/>
+
+    </bean>
+</beans>
+
+
+
+
